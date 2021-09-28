@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="contact-us.css">
+  <title>Contact</title>
+</head>
+
+<body>
+  <form action="">
+    <fieldset>
+      <legend> Contact Information</legend>
+      <label for="text">Name</label>
+      <input type="text" id="first-name" placeholder="First Name">
+      <label for="text">Last Name</label>
+      <input type="text" placeholder="Last Name">
+      <label for="number">Phone Number</label>
+      <input type="number" placeholder="Your Phone Number">
+      <p id="name-error"></p>
+
+    </fieldset>
+    <fieldset>
+      <legend>What would you like help with?</legend>
+      <div class="checkbox">
+
+
+        <label class="container">
+          <input type="checkbox" id="checkbox1"> Office applications, such as Word, Excel etc...
+        </label>
+        <label class="container"><input type="checkbox"> Social media
+        </label>
+        <label class="container">
+          <input type="checkbox" id="checkbox1">
+          Troubleshooting</label>
+
+        <label class="container">
+          <input type="checkbox" id="checkbox1"> Meeting apps, such Zoom, MS Teams</label>
+        </label>
+
+        <label class="container">
+          <input type="checkbox" id="checkbox1">Training or Webinar on Word, Excel etc...</label>
+        </label>
+
+        <label> Additional Message
+          Please describe what you need help with. If possible, specify what devices used (iPhone, Mac, PC, Android etc) <input type="textarea"></label>
+      </div>
+    </fieldset>
+    <input type="submit" id="submit-button">
+  </form>
+
+</body>
+
+</html>

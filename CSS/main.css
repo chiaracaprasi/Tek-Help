@@ -1,0 +1,606 @@
+* {
+  box-sizing: border-box;
+  /*   border: 1px solid black; */
+}
+
+body {
+  font-size: 18px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, button, a, {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  height: 8vh;
+  width: 100vw;
+  position: relative;
+  background-color: rgba(209, 0, 116, 1);
+  background-image: linear-gradient(109.6deg, rgba(209, 0, 116, 1) 11.2%, rgba(110, 44, 107, 1) 91.1%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+#logo {
+  padding-left: 1vh;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* to hide bar menu for mobile view  */
+.desktop-menu {
+  display: none;
+}
+
+/* Hamburger mobile menu  */
+#menu-hamburger {
+  padding-top: 2vh;
+  padding-right: 2vh;
+}
+
+/* mobile menu that shows up when hamburger icon is click on  */
+.mobile-menu {
+  background-color: rgba(209, 0, 116, 1);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  overflow-y: scroll;
+  padding: 15px 30px;
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(100%);
+  z-index: 10;
+}
+
+.mobile-menu a, .mobile-menu a:focus, .mobile-menu a:visited {
+  color: white;
+  display: block;
+  font-size: 40px;
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu-open {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.side-menu-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+.side-menu-logo>a {
+  color: white;
+  font-size: 18px;
+}
+
+/* Mobile menu ending here  */
+.hero {
+  background: url(https://res.cloudinary.com/sonakshicc/image/upload/v1630562745/hero-mobile_sokdxd.jpg) center center no-repeat;
+  /*  background: url(https://res.cloudinary.com/sonakshicc/image/upload/v1630587158/avel-chuklanov-DUmFLtMeAbQ-unsplash_small_gjkatq.jpg) center center no-repeat;  */
+  background-size: cover;
+  height: 40vh;
+  color: RGBA(209, 0, 116, 1);
+  animation:
+}
+
+/* .hero>h1 {
+  position: relative;
+  z-index: 2;
+  width: 40%;
+  left: 30%;
+  top: 35px;
+} */
+.tagline-mobile>h1 {
+  padding: 30px 23px;
+  margin: 0 auto;
+  background-color: RGBA(209, 0, 116, 1);
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.tagline-desktop {
+  display: none;
+}
+
+.page {
+  background-color: #353535 74%;
+  background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%);
+}
+
+button {
+  background-color: #D90368;
+  padding: 20px 10px;
+  margin: 20px 13px 10px 13px;
+  font-size: 15px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 20px 25px;
+  width: 260px;
+  /* border-radius: 6px; */
+  overflow: hidden;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.ease-in-button {
+  background-color: #D90368;
+  transition: 0.6s ease-in;
+}
+
+.ease-in-button:hover {
+  background-color: rgba(110, 44, 107, 1);
+}
+
+.desktop-only {
+  display: none;
+}
+
+/* W3School styles relating to the Services section with icons */
+.w3-row-padding, .w3-row-padding>.w3-quarter, {
+  padding: 0 8px
+}
+
+.w3-center {
+  text-align: center;
+}
+
+.w3-jumbo {
+  font-size: 64px;
+}
+
+.w3-margin-bottom {
+  margin-bottom: 16px;
+}
+
+.w3-large {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.w3-quarter {
+  font-size: 15px;
+}
+
+.services {
+  padding: 10vw 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  /* background-color: #353535 74%;
+  background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%); */
+  /* background-color: #5b6467;
+background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    /* box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.2); */
+  /* border: 1px solid black; */
+  /* background: rgba(163, 36, 83, 1); */
+  /* box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.2); */
+}
+
+.services-section {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.services>h2 {
+  font-size: 22px;
+}
+
+.services-container {
+  /* list-style: none; */
+  display: inline-block;
+  text-align: left;
+}
+
+.services-container li {
+  margin: 0 0 15px 0;
+}
+
+hr {
+  border: 1px solid grey;
+  margin: 8%;
+}
+
+.pricing {
+  /* background: #353535; */
+  color: white;
+}
+
+.pricing>h2 {
+  text-align: center;
+  margin: 10px auto;
+  padding-top: 30px;
+}
+
+.pricing-container {
+  padding: 0 32px 13px 32px;
+}
+
+.pricing-box {
+  box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.2);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.pricing-photo-one {
+  height: 300px;
+  background-image: url(../img/woman-typing-left.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.pricing-photo-two {
+  height: 300px;
+  background-image: url(../img/woman-typing2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.CTA-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.note {
+  margin-bottom: 0;
+  font-size: 13px;
+  padding: 60px 25px 20px 25px;
+  text-align: center;
+}
+
+footer {
+  padding-top: 30px;
+  color: white;
+  margin-top: 0;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+footer>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.copyrigths {
+  text-align: center;
+  padding: 30px 30px 15px 30px;
+  margin: 0;
+}
+
+/* Styles for links throughout page  */
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+a.link-in-text {
+  color: #D90368;
+}
+
+/* animations for text throughout page  */
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.tracking-in-expand-fwd {
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-9-17 16:1:42
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.text-shadow-drop-bottom {
+  -webkit-animation: text-shadow-drop-bottom 0.6s both;
+  animation: text-shadow-drop-bottom 0.6s both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-9-17 16:6:10
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * @animation text-shadow-drop-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-shadow-drop-bottom {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes text-shadow-drop-bottom {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* CSS for Desktop version start here */
+@media(min-width:600px) {
+  .page {
+    background-color: #f1f2f6;
+    background-image: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
+  }
+
+  header {
+    position: fixed;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: white;
+  }
+
+  .desktop-menu {
+    list-style: none;
+    display: flex;
+    gap: 8%;
+    padding-right: 8vw;
+  }
+
+  .desktop-menu>li {
+    font-size: 14px;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+
+  #menu-hamburger {
+    display: none;
+  }
+
+  .hero {
+    background-image: url(../img/computer-full.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .tagline-mobile {
+    display: none;
+  }
+
+  .tagline-desktop {
+    display: block;
+    padding: 30px 23px;
+    margin: 0 auto;
+    background-color: RGBA(209, 0, 116, 1);
+    color: white;
+    text-align: center;
+  }
+
+  button {
+    font-size: 17px;
+    padding: 20px 5px;
+    width: 350px;
+  }
+
+  .services-section, .pricing {
+    color: black;
+    padding: 45px;
+  }
+
+  .services {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .w3-row-padding {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    padding: 5px;
+    list-style: none;
+  }
+
+  .service-box {
+    border: 1px solid grey;
+    padding: 2%;
+  }
+
+  hr {
+    border: 1px solid grey;
+    margin: 20px 8% 15px 8%;
+  }
+
+  .pricing>h2 {
+    padding-bottom: 20px;
+  }
+
+  .pricing-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .pricing-box {
+    border: 1px solid lightgrey;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+  }
+
+  .pricing-box>p {
+    padding: 0 20px;
+  }
+
+  .pricing-photo-one {
+    width: 400px;
+    height: 300px;
+    background-image: url(../img/woman-typiying-sideway-left.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  .pricing-photo-two {
+    width: 400px;
+    height: 300px;
+    background-image: url(../img/woman-typing2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  .CTA-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 80px 0;
+  }
+
+  .note {
+    font-size: 14px;
+  }
+
+  footer {
+    color: black;
+    font-size: 12px;
+  }
+
+  footer>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  footer>div>p>a:link {
+    color: black;
+  }
+
+  .mobile-only {
+    display: none;
+  }

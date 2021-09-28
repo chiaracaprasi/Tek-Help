@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  /*   border: 1px solid black; */
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+}
+
+h1, h2, h3 {
+  margin: 0 auto;
+}
+
+header {
+  height: 8vh;
+  width: 100vw;
+  position: relative;
+  background-color: rgba(209, 0, 116, 1);
+  background-image: linear-gradient(109.6deg, rgba(209, 0, 116, 1) 11.2%, rgba(110, 44, 107, 1) 91.1%);
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo>p>a {
+  padding-left: 1vh;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page {
+  height: 100vh;
+  background: #fff;
+  /* background-color: #ddcad9;
+background-image: linear-gradient(315deg, #ddcad9 0%, #d1b1cb 74%); */
+  /* background-color: #e288f9;
+background-image: linear-gradient(315deg, #e288f9 0%, #ffc988 74%);
+ */
+}
+
+.heading {
+  width: 100vw;
+  background-image: linear-gradient(109.6deg, rgba(209, 0, 116, 1) 11.2%, rgba(110, 44, 107, 1) 91.1%);
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  padding: 30px 20px;
+}
+
+article {
+  padding-top: 35px;
+  padding-bottom: 80px;
+}
+
+.contact-page>p {
+  padding: 0 35px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.contact-page>p>a {
+  color: rgba(209, 0, 116, 1);
+}
+
+.CTA-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.copyrigths {
+  color: black;
+
+}

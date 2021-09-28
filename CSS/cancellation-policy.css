@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  /*   border: 1px solid black; */
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+}
+
+h1, h2, h3 {
+  margin: 10px;
+  text-align: center;
+}
+
+header {
+  height: 8vh;
+  width: 100vw;
+  position: relative;
+  background-color: rgba(209, 0, 116, 1);
+  background-image: linear-gradient(109.6deg, rgba(209, 0, 116, 1) 11.2%, rgba(110, 44, 107, 1) 91.1%);
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo>p>a {
+  padding-left: 1vh;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.page {
+  height: 100vh;
+  background: #fff;
+}
+
+.banner {
+  height:25vh;
+  background-image: url(../img/clock-b&w.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+section {
+  padding: 5px 25px;
+  line-height: 1.5;
+}
+
+
+section>ul {
+   display: inline-block;
+   text-align: left;
+   margin-left: -1opx;
+   padding-left: 25px;
+   font-family: 'Lato', sans-serif;
+   font-size: 18px;
+}
