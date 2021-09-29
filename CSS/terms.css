@@ -9,9 +9,13 @@ p {
   text-align: left;
 }
 
-h1, h2, h3 {
+h1 {
+text-align: center;
+}
+
+ h2, h3 {
   padding: 10px;
-  text-align: center;
+
 }
 
 h1 {
@@ -39,9 +43,9 @@ header {
   background: #fff;
 }
 
-.hero {
+.hero-terms {
   height:25vh;
-  background-image: url(../img/clock-b&w.jpg);
+  background-image: url(../img/terms-of-service.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -94,11 +98,18 @@ section>ul {
     cursor: pointer;
   }
 
-  .hero {
-    height: 350px;
-    background-position: center;
-    background-size: cover;
 
+
+  .hero-terms {
+    height: 450px;
+    background-image: url(../img/terms-of-service.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+  section {
+    margin: 0 100px;
+    }
 
 
 
